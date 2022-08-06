@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {BrowserRouter, Routes, Route, Switch, Link  } from "react-router-dom";
+import Publisher from "./components/Publisher";
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="columns">
+        <div className="column is-half is-offset-one-quarter">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Publisher />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+      </div>
     </div>
   );
 }
-
+ 
 export default App;
