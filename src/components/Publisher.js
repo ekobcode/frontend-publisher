@@ -12,7 +12,7 @@ const Publisher = () => {
     const saveProduct = async (e) => {
         try {
             e.preventDefault();
-            await axios.post('http://108.137.89.216/publisher/',{
+            await axios.post('http://108.137.89.216:9010/publisher/',{
                 queue : queue,
                 data : data
             });
