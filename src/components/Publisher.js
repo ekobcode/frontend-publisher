@@ -10,13 +10,17 @@ const Publisher = () => {
     
  
     const saveProduct = async (e) => {
-        e.preventDefault();
-        await axios.post('http://108.137.89.216/publisher/',{
-            queue : queue,
-            data : data
-        });
-        alert("Terkirim")
-        history("/");
+        try {
+            e.preventDefault();
+            await axios.post('http://108.137.89.216/publisher/',{
+                queue : queue,
+                data : data
+            });
+            alert("Terkirim")
+            history("/");
+        } catch (error) {
+            alert("Error Network")
+        }
     }
  
     return (
