@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route, Switch, Link  } from "react-router-dom";
 import Publisher from "./components/Publisher";
+import Example2 from "./components/Example2";
  
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Publisher />} />
+              <Route path="/example2" element={<Example2 />} />
             </Routes>
           </BrowserRouter>
         </div>
