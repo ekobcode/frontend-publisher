@@ -12,7 +12,7 @@ class Header extends React.Component{
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Publisher</a>
                     </div>
-                    <div class="d-flex" role="search">
+                    {/* <div class="d-flex" role="search">
                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <Link to="/" className="btn btn-outline-success" aria-current="page">Example 1</Link>
@@ -21,7 +21,7 @@ class Header extends React.Component{
                             <Link to="/example2" className="btn btn-outline-success" aria-current="page">Example 2</Link>
                         </li>
                      </ul>
-                    </div>
+                    </div> */}
                 </nav>
             </div>
         )
